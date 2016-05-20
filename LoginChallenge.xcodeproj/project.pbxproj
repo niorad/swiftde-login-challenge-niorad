@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43345D3E1CEE63BD00BFF2D6 /* woosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43345D3D1CEE63BD00BFF2D6 /* woosh.wav */; };
+		43345D401CEE63E200BFF2D6 /* affirm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43345D3F1CEE63E200BFF2D6 /* affirm.wav */; };
+		43345D421CEE640C00BFF2D6 /* SfxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43345D411CEE640C00BFF2D6 /* SfxService.swift */; };
+		43345D441CEE67AC00BFF2D6 /* login.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43345D431CEE67AC00BFF2D6 /* login.wav */; };
 		43F6F5DB1CEC60B7008C0822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6F5DA1CEC60B7008C0822 /* AppDelegate.swift */; };
 		43F6F5DD1CEC60B7008C0822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6F5DC1CEC60B7008C0822 /* ViewController.swift */; };
 		43F6F5E01CEC60B7008C0822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F6F5DE1CEC60B7008C0822 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43345D3D1CEE63BD00BFF2D6 /* woosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woosh.wav; sourceTree = "<group>"; };
+		43345D3F1CEE63E200BFF2D6 /* affirm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = affirm.wav; sourceTree = "<group>"; };
+		43345D411CEE640C00BFF2D6 /* SfxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SfxService.swift; sourceTree = "<group>"; };
+		43345D431CEE67AC00BFF2D6 /* login.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = login.wav; sourceTree = "<group>"; };
 		43F6F5D71CEC60B7008C0822 /* LoginChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F6F5DA1CEC60B7008C0822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F6F5DC1CEC60B7008C0822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,10 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				43F6F5DA1CEC60B7008C0822 /* AppDelegate.swift */,
+				43345D411CEE640C00BFF2D6 /* SfxService.swift */,
 				43F6F5DC1CEC60B7008C0822 /* ViewController.swift */,
 				43F6F5DE1CEC60B7008C0822 /* Main.storyboard */,
 				43F6F5E11CEC60B7008C0822 /* Assets.xcassets */,
 				43F6F5E31CEC60B7008C0822 /* LaunchScreen.storyboard */,
+				43345D3D1CEE63BD00BFF2D6 /* woosh.wav */,
+				43345D431CEE67AC00BFF2D6 /* login.wav */,
+				43345D3F1CEE63E200BFF2D6 /* affirm.wav */,
 				43F6F5E61CEC60B7008C0822 /* Info.plist */,
 			);
 			path = LoginChallenge;
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					43F6F5D61CEC60B7008C0822 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TKY73Q72NH;
 					};
 				};
 			};
@@ -123,7 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F6F5E51CEC60B7008C0822 /* LaunchScreen.storyboard in Resources */,
+				43345D3E1CEE63BD00BFF2D6 /* woosh.wav in Resources */,
 				43F6F5E21CEC60B7008C0822 /* Assets.xcassets in Resources */,
+				43345D401CEE63E200BFF2D6 /* affirm.wav in Resources */,
+				43345D441CEE67AC00BFF2D6 /* login.wav in Resources */,
 				43F6F5E01CEC60B7008C0822 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F6F5DD1CEC60B7008C0822 /* ViewController.swift in Sources */,
+				43345D421CEE640C00BFF2D6 /* SfxService.swift in Sources */,
 				43F6F5DB1CEC60B7008C0822 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +268,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LoginChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niorad.LoginChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,10 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LoginChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niorad.LoginChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -288,6 +313,7 @@
 				43F6F5EB1CEC60B7008C0822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
